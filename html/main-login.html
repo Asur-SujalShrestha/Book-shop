@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="../CSS/main-login.css">
+</head>
+
+<body>
+    <form action="#">
+        <div class="all" id="all">
+            <div class="inner">
+                <h1>LOGIN</h1>
+                <div class="login-page">
+                    <label for="Name">Email</label><br>
+                    <input type="text" id="LoginName" required><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="LoginPassword" required>
+                    <img src="../icon/eye.png" alt="ERROR" onclick="openpassword()" class="eye" id="eye">
+                    <a href="#" class="forget">Forget password?</a><br>
+                    <button onclick="newlogin()" class="login-button">Login</button><br>
+                    <h4>Doesn't have an account? <a href="#" onclick="openreg()">Register here</a></h4>
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <form action="#">
+        <div class="Register" id="Register">
+            <div class="inner">
+                <h1>Register</h1>
+                <div class="login-page">
+                    <label for="Name">Name</label><br>
+                    <input type="text" id="RegName" required><br><br>
+                    <label for="Name">Email</label><br>
+                    <input type="text" id="LoginName" required><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="RegPassword" required><br>
+                    <img src="../icon/eye.png" alt="ERROR" onclick="openRegpassword()" class="eye" id="regeye">
+                    <button onclick="newregister()" class="login-button">Register</button><br>
+                    <h4>Already have an account <a href="#" onclick="openlogin()">Login here</a></h4>
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <script>
+        const openreg = () => {
+            document.getElementById("Register").style.display = "flex";
+            document.getElementById("all").style.display = "none";
+        }
+        const openlogin = () => {
+            document.getElementById("Register").style.display = "none";
+            document.getElementById("all").style.display = "flex";
+        }
+        const newregister = () => {
+            let Regname = document.getElementById("RegName");
+            let RegPassword = document.getElementById("RegPassword");
+            if (Regname.value == '' || RegPassword == '') {
+                alert("fill the form carefully");
+            }
+            else {
+                alert("You have register");
+            }
+        }
+        const newlogin = () => {
+            let logname = document.getElementById("LoginName");
+            let logPassword = document.getElementById("LoginPassword");
+            if (logname.value == '' || logPassword == '') {
+                alert("fill the form carefully");
+            }
+            else {
+                alert("You have Login");
+            }
+        }
+        const openpassword = () => {
+            let password = document.querySelector("#LoginPassword");
+            let logimage = document.querySelector('#eye');
+            if (password.type === 'password') {
+                password.type = 'text';
+                logimage.src = '../icon/hide.png';
+
+            }
+            else if (password.type === 'text') {
+                password.type = 'password';
+                logimage.src = '../icon/eye.png';
+            }
+        }
+        const openRegpassword = () => {
+            let regpassword = document.querySelector('#RegPassword');
+            let image = document.querySelector('#regeye');
+            if (regpassword.type === 'password') {
+                regpassword.type = 'text';
+                image.src = '../icon/hide.png';
+
+            }
+            else if (regpassword.type === 'text') {
+                regpassword.type = 'password';
+                image.src = '../icon/eye.png';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify/History</title>
+    <link rel="stylesheet" href="../CSS/history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script>
+        function catagories_dropdown() {
+            let book = document.getElementById("bookType");
+            if (book.style.display == 'none') {
+                book.style.display = 'inline-block';
+                book.style.zIndex = '5';
+            }
+            else {
+                book.style.display = 'none';
+            }
+
+        }
+        let catagories = document.getElementById("Catagories");
+        catagories.addEventListener('click', catagories_dropdown)
+    </script>
+</head>
+
+<body>
+    <!-- navigation section -->
+    <section class="heading">
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../photos/logo.png" alt="Error"></a>
+            </div>
+
+            <div class="search-box">
+                <form action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><img src="../icon/search.png" alt="Error"></button>
+                </form>
+            </div>
+
+            <div class="favourite">
+                <a href="#"><img src="../icon/sun.png" alt="Error"></a>
+                <a href="#"><img src="../icon/heart.png" alt="Error"></a>
+                <a href="#"><img src="../icon/cart.png" alt="Error"></a>
+                <a href="#"><img src="../icon/person.png" alt="Error">
+                    <h4>Login</h4>
+                </a>
+            </div>
+
+        </nav>
+        <div class="sub-heading">
+            <ul class="subtitle">
+            <li><a href="#" id="Catagories" class="Catagories" onclick="catagories_dropdown()">Catagories <h3>></h3>
+                <ul class="book-type" id="bookType">
+                    <li><a href="html/history.html">History</a></li>
+                    <li><a href="html/stories.html">Story</a></li>
+                    <li><a href="html/love.html">Love & Romance</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Biography</a></li>
+                    <li><a href="#">Motivational</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="history.html">Best Selling</a></li>
+            <li><a href="stories.html">New arrival</a></li>
+            <li><a href="love.html">Award Winning</a></li>
+            <li><a href="history.html">Contact</a></li>
+            </ul>
+
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </section>
+
+
+    <div class="awardcontainer">
+        <h2
+            style="text-align: center; margin-top: 20px; color: rgb(223, 75, 75); background-color: rgb(246, 246, 246);">
+            The Best History booksx</h2>
+        <h3 style="text-align: center; margin-top: 15px; color: crimson;text-decoration: underline; ">Discover
+            Masterpieces!</h3></div>
+        <section class="product-section">
+            <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+                <section class="product-container product-1">
+                    <div class="card">
+                        <img src="../history/Sapiens__A_Brief_History_of_Humankind.jpg" alt="loading">
+                        <div class="content">
+                            <div class="title">Sapiens by Yuval Noah Harari</div>
+                            <div class="feature size">
+                                <span>$10</span>
+                            </div>
+                            <div class="feature color">
+                                <span>
+                                    <div class="rating">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text"></label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text"></label>
+                                        <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text"></label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text"></label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text"></label>
+                                    </div>
+                                </span>
+                            </div>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+                <section class="product-container product-1">
+                    <div class="card">
+                        <img src="../history/The-Lessons-of-History-BY-Will-Ariel-Durant.jpg" alt="loading">
+
+                        <div class="content">
+                            <div class="title">The lessons of history by David Graeber</div>
+                            <div class="feature size">
+                                <span>$8</span>
+                            </div>
+                            <div class="feature color">
+                                <span>
+                                    <div class="rating">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text"></label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text"></label>
+                                        <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text"></label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text"></label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text"></label>
+                                    </div>
+                                </span>
+                            </div>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+                <section class="product-container product-1">
+                    <div class="card">
+                        <img src="../history/61CGhy6KTmL._AC_UF1000,1000_QL80_.jpg" alt="loading">
+
+                        <div class="content">
+                            <div class="title">The dawn of Everything by Matt Ridley</div>
+                            <div class="feature size">
+                                <span>$5</span>
+                            </div>
+                            <div class="feature color">
+                                <span>
+                                    <div class="rating">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text"></label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text"></label>
+                                        <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text"></label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text"></label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text"></label>
+                                    </div>
+                                </span>
+                            </div>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+                <section class="product-container product-1">
+                    <div class="card">
+                        <img src="../history/The_evolution_of_Everything.jpg" alt="loading">
+
+                        <div class="content">
+                            <div class="title">Evolution of Everything Matt Ridley</div>
+                            <div class="feature size">
+                                <span>$10</span>
+                            </div>
+                            <div class="feature color">
+                                <span>
+                                    <div class="rating">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text"></label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text"></label>
+                                        <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text"></label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text"></label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text"></label>
+                                    </div>
+                                </span>
+                            </div>
+                            <button class="btn-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+            <section class="product-container product-1">
+                <div class="card">
+                    <img src="../history/factfullness.jpg" alt="loading">
+
+                    <div class="content">
+                        <div class="title">Factfulness by Hans Rosling</div>
+                        <div class="feature size">
+                            <span>$12</span>
+                        </div>
+                        <div class="feature color">
+                            <span>
+                                <div class="rating">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="text"></label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="text"></label>
+                                    <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text"></label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text"></label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text"></label>
+                                </div>
+                            </span>
+                        </div>
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+            </div>
+    
+
+    <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+        <section class="product-container product-1">
+            <div class="card">
+                <img src="../history/Enligtenment_now_by_Steven_pinker.jpg" alt="loading">
+
+                <div class="content">
+                    <div class="title">Enligtenment now by Steven pinker</div>
+                    <div class="feature size">
+                        <span>$15</span>
+                    </div>
+                    <div class="feature color">
+                        <span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+        <section class="product-container product-1">
+            <div class="card">
+                <img src="../history/A_people's_history_of_the_United_States.jpg" alt="loading">
+
+                <div class="content">
+                    <div class="title">A people's history of United State</div>
+                    <div class="feature size">
+                        <span>$4</span>
+                    </div>
+                    <div class="feature color">
+                        <span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+        <section class="product-container product-1">
+            <div class="card">
+                <img src="../history/Common_sense.jpg" alt="loading">
+
+                <div class="content">
+                    <div class="title">Common Sense by thomas Paine</div>
+                    <div class="feature size">
+                        <span>$11</span>
+                    </div>
+                    <div class="feature color">
+                        <span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+        </section>
+    </div>
+    <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+        <section class="product-container product-1">
+            <div class="card">
+                <img src="../history/Team_of_Rivals_cover.jpg" alt="loading">
+                <div class="content">
+                    <div class="title">Team of Rivals by Doris Kearns</div>
+                    <div class="feature size">
+                        <span>$15</span>
+                    </div>
+                    <div class="feature color">
+                        <span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+        <section class="product-container product-1">
+            <div class="card">
+                <img src="../history/the_warmth_of_others_suns.jpg" alt="loading">
+
+                <div class="content">
+                    <div class="title">The warmth of Others suns</div>
+                    <div class="feature size">
+                        <span>$10</span>
+                    </div>
+                    <div class="feature color">
+                        <span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+        <section class="product-container product-1">
+            <div class="card">
+                <img src="../history/Orientalism_by_Edward.jpg" alt="loading">
+
+                <div class="content">
+                    <div class="title">Orientalism by Edward W. said</div>
+                    <div class="feature size">
+                        <span>$9</span>
+                    </div>
+                    <div class="feature color">
+                        <span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="card-section animate__animated animate__fadeInUp animate__delay-1s">
+        <section class="product-container product-1">
+            <div class="card">
+                <img src="../history/restart.jpg" alt="loading">
+
+                <div class="content">
+                    <div class="title">Restart by Mihir S. Sharma</div>
+                    <div class="feature size">
+                        <span>$7</span>
+                    </div>
+                    <div class="feature color">
+                        <span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"></label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"></label>
+                                <input checked="" type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"></label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"></label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"></label>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </section>
+
+    <!-- footer-section -->
+    <section class="footer-section">
+        <div class="footer">
+            <div class="container">
+              <div class="col1">
+                <img src="../photos/logo.png" alt="loading" />
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                  alias eligendi a ipsam? Magnam ullam ut omnis, dignissimos quibusdam
+                  eum deserunt impedit facere! Laudantium, perspiciatis quisquam? Quas
+                  tenetur iusto harum.
+                </p>
+              </div>
+              <div class="col2">
+                <div class="nav">
+                  <h3>Discover</h3>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Categories.html">Categories</a></li>
+                    <li><a href="Authors.html">Authors</a></li>
+                    <li><a href="NewArrival.html">New Arrival</a></li>
+                    <li><a href="AwardWinning.html">Award Winning</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col3">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="https://twitter.com" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+                <h4>Stay Updated with Exclusive Offers!</h4>
+                <p>
+                  Join our mailing list to receive the latest discounts, news, and
+                  exciting giveaway announcements straight to your inbox. Don't miss
+                  out on these exclusive opportunities!
+      
+                  <label for="email">Your Email Address:</label>
+                  <input type="email" placeholder="Enter your email address" />
+                  <a href="#">Subscribe</a>
+                </p>
+              </div>
+            </div>
+            <br>
+            <hr />
+            <p class="copyright">&copy; 2023 Readify. All rights reserved.</p>
+          </div>
+    </section>
+
+
+</body>
+
+</html>
